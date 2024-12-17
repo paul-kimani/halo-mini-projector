@@ -4,60 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halo Mini Projector</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS Code */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .product-info img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .details {
+            max-width: 600px;
+        }
+        .details h2 {
+            color: #333;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #2e8b57;
+            margin-top: 10px;
+        }
+        .buy-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        .buy-button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
+
     <header>
         <h1>Halo Mini Projector</h1>
-        <p>Experience portable, high-definition projection anywhere!</p>
     </header>
 
-    <!-- Product Section -->
-    <section id="product">
-        <div class="content">
-            <h2>Why Choose the Halo Mini Projector?</h2>
-            <p>Compact, lightweight, and powerful. The Halo Mini Projector delivers exceptional image quality with advanced features for any setting.</p>
-        </div>
-        <img src="https://th.bing.com/th/id/OIP.pHWFyJ4heLAF5oKuLx9DugHaHB?rs=1&pid=ImgDetMain" alt="Halo Mini Projector" id="product-img">
-    </section>
+    <div class="container">
+        <section class="product-info">
+            <img src="https://via.placeholder.com/300" alt="Halo Mini Projector">
+            <div class="details">
+                <h2>Discover the Future of Portable Entertainment</h2>
+                <p>The Halo Mini Projector is your go-to solution for projecting high-quality video anywhere you go. Compact, lightweight, and easy to use, it's perfect for entertainment on the go.</p>
+                <p class="price">$199.99</p>
+                <button class="buy-button" onclick="buyNow()">Buy Now</button>
+            </div>
+        </section>
+    </div>
 
-    <!-- Features Section -->
-    <section id="features">
-        <h2>Key Features</h2>
-        <ul>
-            <li>1080p HD Resolution</li>
-            <li>Wireless Connectivity</li>
-            <li>Long Battery Life</li>
-            <li>Compact and Portable Design</li>
-            <li>Up to 200-inch Screen Projection</li>
-        </ul>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>What Our Customers Say</h2>
-        <div class="testimonial">
-            <p>"The Halo Mini Projector is fantastic! I use it for movie nights and presentations. Super convenient and portable!"</p>
-            <span>- Alex M.</span>
-        </div>
-        <div class="testimonial">
-            <p>"Amazing picture quality and battery life. Highly recommend this product!"</p>
-            <span>- Sophia L.</span>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section id="cta">
-        <h2>Get Yours Today!</h2>
-        <button id="buy-btn">Buy Now</button>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Halo Mini Projector. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // JavaScript Code
+        function buyNow() {
+            alert("Thank you for your purchase! The Halo Mini Projector will be shipped to you soon.");
+        }
+    </script>
+
 </body>
 </html>
